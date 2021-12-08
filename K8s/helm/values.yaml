@@ -26,10 +26,10 @@ psp:
 nodeport: false
 
 # "special" Openshift. Set to true when deploying to any openshift flavour
-openshift: false
+openshift: true
 
 # Storage class to use with redis statefulset.
 redis:
-  storageClassName: standard
+  storageClassName: nfs-client
 
-ocCreateRoute: false
+ocCreateRoute: true
