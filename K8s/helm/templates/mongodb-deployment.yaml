@@ -19,7 +19,7 @@ spec:
       {{ end }}
       containers:
       - name: mongodb
-        image: {{ .Values.image.repo }}/rs-mongodb-s390x:{{ .Values.image.version }}
+        image: {{ .Values.image.repo }}/rs-mongo-s390x:{{ .Values.image.version }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - containerPort: 27017
